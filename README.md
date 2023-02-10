@@ -1,4 +1,4 @@
-# React & SQL E-Commerce Store
+# E-Commerce Store - React & SQL
 A fully functional e-commerce store built using React and SQL.
 
 ## Features
