@@ -7,18 +7,22 @@
     <div class="row">
       <div class="col-lg-3 col-md-6 mb-4">
         <h4>About Us</h4>
+        <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <h4>Address</h4>
+        <br>
         <p>123 Main Street<br>Anytown, USA 12345</p>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <h4>Contact Us</h4>
+        <br>
         <p>Phone: 123-456-7890<br>Email: info@example.com</p>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <h4>Follow Us</h4>
+        <br>
         <a href="#" class="text-blue-500"><i class="fab fa-facebook fa-lg mr-2"></i>Facebook</a><br>
         <a href="#" class="text-blue-600"><i class="fab fa-twitter fa-lg mr-2"></i>Twitter</a>
       </div>
