@@ -8,7 +8,7 @@
       <div class="col-lg-3 col-md-6 mb-4">
         <h4>About Us</h4>
         <br>
-        <p>Shop the latest smartphones and accessories from top brands at competitive prices on our mobile phone ecommerce store, with frequent discounts.</p>
+        <p>Shop for the latest smartphones from the top brands at competitive prices.</p>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <h4>Address</h4>
