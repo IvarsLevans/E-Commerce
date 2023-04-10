@@ -11,16 +11,13 @@
     /*  include banner area  */
     
     /*  include new phones section  */
-        include ('./components/new-arrivals.php');
+    include ('./components/new-arrivals.php');
     /*  include new phones section  */
 
     /*  include top sale section */
         include ('./components/popular.php');
     /*  include top sale section */
 
-    /*  include special price section  */
-         include ('./components/catalog.php');
-    /*  include special price section  */
 ?>
 
 

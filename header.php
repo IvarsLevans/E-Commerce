@@ -37,7 +37,7 @@
         <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Products</a>
+          <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/products.php">Products</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="#">About</a>
