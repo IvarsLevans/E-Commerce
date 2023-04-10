@@ -37,10 +37,16 @@
         <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/products.php">Products</a>
+          <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/products.php">All Brands</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">About</a>
+          <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/products.php?brand=Apple">Apple</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/products.php?brand=Redmi">Redmi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/products.php?brand=Samsung">Samsung</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="#">Login</a>
