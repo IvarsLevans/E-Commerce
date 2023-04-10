@@ -33,20 +33,20 @@
     <div class="navbar-menu">
       <a class="navbar-brand text-white" href="#">Levanto.</a>
       <ul class="navbar-nav font-rubik">
-        <li class="nav-item text-white">
-          <a class="nav-link" href="#">On Sale</a>
+        <li class="nav-item">
+        <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Category</a>
+          <a class="nav-link text-white" href="#">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Products <i class="fas fa-chevron-down"></i></a>
+          <a class="nav-link text-white" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Category <i class="fas fa-chevron-down"></i></a>
+          <a class="nav-link text-white" href="#">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Coming Soon</a>
+          <a class="nav-link text-white" href="#">Sign Up</a>
         </li>
       </ul>
       <div class="cart-container">
