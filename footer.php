@@ -8,7 +8,7 @@
       <div class="col-lg-3 col-md-6 mb-4">
         <h4>About Us</h4>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+        <p>Shop the latest smartphones and accessories from top brands at competitive prices on our mobile phone ecommerce store, with frequent discounts.</p>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <h4>Address</h4>
