@@ -158,160 +158,165 @@ body {
     background-color: #f8f9fa;
     }
 
-
-}
 // footer.php
-
-  /* Footer styles */
-  #footer {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  #footer h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    font-family: 'Rubik', sans-serif;
-    color: #fff;
-    padding: 50px 0;
-  }
-
-  #footer p {
-    font-size: 0.875rem;
-    color: #999;
-    margin-bottom: 1.5rem;
-    font-family: 'Raleway', sans-serif;
-  }
-
-  #footer input[type="text"] {
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem;
-    margin-right: 1rem;
-    background-color: #f8f9fa;
-    color: #333;
-  }
-
-  #footer button[type="submit"] {
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-  }
-
-  #footer button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-
-  #footer a {
-    font-size: 0.875rem;
-    color: #999;
-    margin-bottom: 0.5rem;
-    transition: all 0.3s ease;
-  }
-
-  #footer a:hover {
-    color: #fff;
-  }
-
-  /* Footer utility classes */
-  .bg-dark {
-    background-color: #333;
-  }
-
-  .bg-light {
-    background-color: #f8f9fa;
-  }
-
-  .text-white {
-    color: #fff;
-  }
-
-  .text-gray-400 {
-    color: #999;
-  }
-
-  .text-blue-500 {
-    color: #007bff;
-  }
-
-  .text-blue-600 {
-    color: #0056b3;
-  }
-
-  .font-rubik {
-    font-family: 'Rubik', sans-serif;
-  }
-
-  .font-size-20 {
-    font-size: 1.25rem;
-  }
-
-  .font-rale {
-    font-family: 'Raleway', sans-serif;
-  }
-
-  .py-5 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
-  }
-
-  .col-lg-3,
-  .col-lg-4,
-  .col-lg-2 {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .col-lg-3 {
-    max-width: 25%;
-  }
-
-  .col-lg-4 {
-    max-width: 33.3333%;
-  }
-
-  .col-lg-2 {
-    max-width: 16.6667%;
-  }
-
-  .d-flex {
-    display: flex;
-  }
-
-  .flex-column {
-    flex-direction: column;
-  }
-
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .pb-1 {
-    padding-bottom: 0.25rem;
-  }
-
-  .mb-2 {
-    margin-bottom: 1rem;
-  }
-
-  .color-second {
-   
-    color: #007bff;
+/* Footer styles */
+#footer {
+  background-color: #333;
+  color: #fff;
 }
+
+#footer h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #fff;
+}
+
+#footer h4.about,
+#footer h4.address,
+#footer h4.contact,
+#footer h4.follow {
+  font-weight: bold;
+}
+
+#footer p {
+  font-size: 0.875rem;
+  color: #999;
+  margin-bottom: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+#footer input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+#footer button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+#footer button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#footer a {
+  font-size: 0.875rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+/* Footer utility classes */
+.bg-dark {
+  background-color: #333;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-gray-400 {
+  color: #999;
+}
+
+.text-blue-500 {
+  color: #007bff;
+}
+
+.text-blue-600 {
+  color: #0056b3;
+}
+
+.font-rubik {
+  font-family: 'Rubik', sans-serif;
+}
+
+.font-size-20 {
+  font-size: 1.25rem;
+}
+
+.font-rale {
+  font-family: 'Raleway', sans-serif;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-lg-3,
+.col-lg-4,
+.col-lg-2 {
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.col-lg-3 {
+  max-width: 25%;
+}
+
+.col-lg-4 {
+  max-width: 33.3333%;
+}
+
+.col-lg-2 {
+  max-width: 16.6667%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.color-second {
+  color: #007bff;
+}
+

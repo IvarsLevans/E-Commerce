@@ -2,12 +2,30 @@
 <!-- !start #main-site -->
 
 <!-- start #footer -->
-<footer class="bg-dark text-white py-20">
-  <div class="container mx-auto">
-
-
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h4>Address</h4>
+        <p>123 Main Street<br>Anytown, USA 12345</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h4>Contact Us</h4>
+        <p>Phone: 123-456-7890<br>Email: info@example.com</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h4>Follow Us</h4>
+        <a href="#" class="text-blue-500"><i class="fab fa-facebook fa-lg mr-2"></i>Facebook</a><br>
+        <a href="#" class="text-blue-600"><i class="fab fa-twitter fa-lg mr-2"></i>Twitter</a>
+      </div>
+    </div>
   </div>
 </footer>
+
 <!-- !start #footer -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
