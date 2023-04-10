@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Mobile Shopee</title>
+    <title>TechBay</title>
 
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
   <!-- Primary Navigation -->
   <nav class="navbar bg-gray-800">
     <div class="navbar-menu">
-      <a class="navbar-brand text-white" href="#">Levanto.</a>
+      <a class="navbar-brand text-white" href="http://localhost/E-Commerce-React-SQL/">TechBay.</a>
       <ul class="navbar-nav font-rubik">
         <li class="nav-item">
         <a class="nav-link text-white" href="http://localhost/E-Commerce-React-SQL/">Home</a>
