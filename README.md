@@ -3,33 +3,29 @@
 
 This is a Laravel E-commerce Project - CRUD.
 
-> Technology Used : Laravel-8, Bootstrap, JavaScript, Ajax
+> Technology Used : Laravel, Bootstrap, JavaScript, Ajax
 
 # **Features**
 
--   Responsive.
 -   Authentication.
 -   Sign in, log out.
 -   Follow items, unfollow items (Wishlist).
--   Distinguish admin and normal user.
+-   Customer and Admin privilages.
 -   Contact.
 -   Product:
-    -   Search, filter.
-    -   Review, rating.
-    -   Multiple image.
-    -   Sizes, color.
-    -   Gender.
+    -   Reviews, ratings.
+    -   Multiple images.
+    -   Color.
+    -   Brand.
 -   Payment:
     -   Coupon, discount.
     -   Form of payment.
-    -   Return order.
     -   Order history.
 -   Admin-page:
     -   Statistics of registered people and number of products, orders.
     -   Table showing users, products,  messages and reviews.
     -   Order confirmation and management.
     -   Create a new items.
--   ...
 
 ## Installation
 ```bash
