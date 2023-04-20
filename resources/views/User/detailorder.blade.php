@@ -30,9 +30,6 @@
                 Detail Order
             </span>
         </div>
-        <div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
-            <a href="{{ url()->previous() }}" class="btn btn-default text-left">Back to orders</a>
-        </div>
     </div>
 
     <div class="bg0 p-t-15 p-b-45">

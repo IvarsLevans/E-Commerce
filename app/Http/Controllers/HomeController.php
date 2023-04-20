@@ -308,7 +308,7 @@ class HomeController extends Controller
 
             return redirect()->back()->with('message', 'Product added successfully!');
         } else {
-            return redirect()->route('login')->with('message', 'Please login to add products to cart');
+            return redirect()->route('login')->with('message', 'Please Login to Add Products in Cart');
         }
     }
 
@@ -322,7 +322,7 @@ class HomeController extends Controller
 
             $data->save();
 
-            return redirect()->back()->with('message', 'Cart Update Successfully!');
+            return redirect()->back()->with('message', 'Cart Updated Successfully!');
         } else {
             return redirect('auth.login');
         }
@@ -334,7 +334,7 @@ class HomeController extends Controller
 
         $data->delete();
 
-        return redirect()->back()->with('message', 'Product has deleted out cart');
+        return redirect()->back()->with('message', 'Product Deleted From Cart!');
     }
     
     public function updatecoupon(Request $request, $id)
@@ -350,7 +350,7 @@ class HomeController extends Controller
             }
         }
 
-        return redirect()->back()->with('message', 'Your Coupon has apllied!');
+        return redirect()->back()->with('message', 'Your Coupon is Applied!');
     }
 
     // Wishlist
@@ -388,7 +388,7 @@ class HomeController extends Controller
 
             foreach ($wishlists as $wish) {
                 if ($product->id == $wish->id_product and $wish->id_user == $user->id) {
-                    return redirect()->back()->with('warning', 'The item already has in wishlist!');
+                    return redirect()->back()->with('warning', 'Item Already Added to Wishlist!');
                 }
             }
 
@@ -400,7 +400,7 @@ class HomeController extends Controller
 
             $wishlist->save();
 
-            return redirect()->back()->with('message', 'Wishlist Added Successfully!');
+            return redirect()->back()->with('message', 'Added to Wishlist Successfully!');
         } else {
             return redirect('login');
         }
@@ -412,7 +412,7 @@ class HomeController extends Controller
 
         $data->delete();
 
-        return redirect()->back()->with('message', 'Product has deleted out wishlist');
+        return redirect()->back()->with('message', 'Product Deleted from Wishlist!');
     }
 
     // About
@@ -479,7 +479,7 @@ class HomeController extends Controller
 
             $data->save();
 
-            return redirect()->back()->with('message', 'Your Message Has Sent Successfully!');
+            return redirect()->back()->with('message', 'Your Message Was Sent Successfully!');
         } else {
             return view('auth.login');
         }
@@ -584,7 +584,7 @@ class HomeController extends Controller
                 $carts->delete();
             }
 
-            return redirect('trackorder')->with('message', 'Your Order Has Payment Successfully!');
+            return redirect('trackorder')->with('message', 'Payment Successful, Order Received!');
         } else {
             return view('auth.login');
         }
@@ -631,7 +631,7 @@ class HomeController extends Controller
                 $carts->delete();
             }
 
-            return redirect('trackorder')->with('message', 'Your Order Has Payment Successfully!');
+            return redirect('trackorder')->with('message', 'Payment Successful, Order Received!');
         } else {
             return view('auth.login');
         }
@@ -646,7 +646,7 @@ class HomeController extends Controller
             $user = auth()->user();
 
             if ($request->rating == NULL or $request->rating == 0 or $request->review == NULL) {
-                return redirect()->back()->with('warning', 'You need to fill all feedback before submit!');
+                return redirect()->back()->with('warning', 'Fill Out the Details Before Submission!');
             } else {
                 $data->id_user = $user->id;
 
@@ -662,7 +662,7 @@ class HomeController extends Controller
 
                 $data->save();
 
-                return redirect()->back()->with('message', 'Your Feedback Has Submit Successfully!');
+                return redirect()->back()->with('message', 'Your Feedback Was Submitted Successfully!');
             }
         } else {
             return view('auth.login');
@@ -675,7 +675,7 @@ class HomeController extends Controller
 
         $data->delete();
 
-        return redirect()->back()->with('message', 'Your Feedback has deleted!');
+        return redirect()->back()->with('message', 'Your Feedback Was Deleted!');
     }
 
 }

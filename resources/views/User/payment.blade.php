@@ -108,7 +108,7 @@
 
                     <div class="mb-3">
                         <label for="phone">Phone</label>
-                        <input type="text" class="form-control" name="phone" placeholder="(+84)  " required="">
+                        <input type="text" class="form-control" name="phone" placeholder="+371 ********" required="">
                         <div class="invalid-feedback">
                             Please enter your shipping address.
                         </div>
@@ -125,16 +125,16 @@
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label for="country">Country</label>
-                            <input type="text" class="form-control" name="country" placeholder="Vietnam" required="">
+                            <input type="text" class="form-control" name="country" placeholder="Country" required="">
                             <div class="invalid-feedback">
                                 Please select a valid country.
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="state">State</label>
-                            <input type="text" class="form-control" name="state" placeholder="Ho Chi Minh" required="">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" name="state" placeholder="City" required="">
                             <div class="invalid-feedback">
-                                Please provide a valid state.
+                                Please provide a valid city.
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
@@ -197,7 +197,7 @@
                     <div class="mb-3">
                         <label for="items">Total price</label>
                         <input type="text" class="form-control" name="price" value="{{$final}}" hidden>
-                        <h3>{{$final}}</h3>
+                        <h3>$ {{$final}}</h3>
                     </div>
                     <hr class="mb-4">
                     <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">

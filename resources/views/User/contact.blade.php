@@ -67,9 +67,9 @@
                             <textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="message" placeholder="How Can We Help?"></textarea>
                         </div>
 
-                        <div class="flex-c-m stext-101 cl0 size-112 bg7 bor11 hov-btn3 p-lr-15 trans-04 m-b-10 pointer">
-                            <input type="submit" name="submit" value="Submit" style="cursor: pointer;">
-                        </div>
+                        <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
+                            <input type="submit" name="submit" value="Send">
+                        </button>
                     </form>
                 </div>
 

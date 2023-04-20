@@ -125,14 +125,14 @@
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label for="country">Country</label>
-                            <input type="text" class="form-control" name="country" placeholder="Vietnam" required="">
+                            <input type="text" class="form-control" name="country" placeholder="Country" required="">
                             <div class="invalid-feedback">
                                 Please select a valid country.
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="state">State</label>
-                            <input type="text" class="form-control" name="state" placeholder="Ho Chi Minh" required="">
+                            <label for="state">City</label>
+                            <input type="text" class="form-control" name="state" placeholder="City" required="">
                             <div class="invalid-feedback">
                                 Please provide a valid state.
                             </div>
