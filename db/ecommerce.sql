@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2023 at 05:49 PM
+-- Generation Time: Apr 20, 2023 at 09:08 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -76,6 +76,13 @@ CREATE TABLE `feedback` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `id_user`, `id_product`, `user_name`, `email`, `rating`, `feedback`, `created_at`, `updated_at`) VALUES
+(12, '1', '52', 'user', 'user@gmail.com', '5', 'Great Product!', '2023-04-20 15:07:59', '2023-04-20 15:07:59');
+
 -- --------------------------------------------------------
 
 --
@@ -90,6 +97,13 @@ CREATE TABLE `messages` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `messages`
+--
+
+INSERT INTO `messages` (`id`, `id_user`, `email`, `message`, `created_at`, `updated_at`) VALUES
+(9, '1', 'user@gmail.com', 'Do you offer discounts for repeat customers!', '2023-04-20 15:31:31', '2023-04-20 15:31:31');
 
 -- --------------------------------------------------------
 
@@ -156,6 +170,13 @@ CREATE TABLE `orders` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `id_user`, `firstname`, `lastname`, `email`, `phone`, `address`, `country`, `state`, `zip`, `method`, `cc_name`, `cc_number`, `cc_expiration`, `cc_cvv`, `items`, `price`, `status`, `created_at`, `updated_at`) VALUES
+(15, '1', 'John', 'Smith', 'user@gmail.com', '+371 26424242', 'Maskavas iela 250', 'Latvia', 'Riga', 'LV-1050', 'PayPal', 'John Smith', '5733769840916243898', '10/2027', '341', 'Apple iPhone 14 Pro (128 GB) X 1', '1299', 'Pending', '2023-04-20 15:37:44', '2023-04-20 15:37:44');
+
 -- --------------------------------------------------------
 
 --
@@ -212,12 +233,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `title`, `price`, `description`, `category`, `brand`, `color`, `image1`, `image2`, `image3`, `created_at`, `updated_at`) VALUES
-(1, 'iPhone 13 Pro Max', '1099', 'The Apple iPhone 13 Pro Max features a 6.7-inch Super Retina XDR display, A15 Bionic chip, and 5G support.', 'Phones', 'Apple', 'Graphite', 'iphone13promax_graphite_img1.jpg', 'iphone13promax_graphite_img2.jpg', 'iphone13promax_graphite_img3.jpg', '2023-04-16 07:23:45', '2023-04-16 07:23:45'),
-(2, 'Samsung Galaxy S22 Ultra', '1199', 'The Samsung Galaxy S22 Ultra features a 6.8-inch Dynamic AMOLED 2X display, Exynos 2200, and 5G support.', 'Phones', 'Samsung', 'Phantom Black', 'galaxys22ultra_phantomblack_img1.jpg', 'galaxys22ultra_phantomblack_img2.jpg', 'galaxys22ultra_phantomblack_img3.jpg', '2023-04-16 07:23:45', '2023-04-16 07:23:45'),
-(3, 'MacBook Pro 16-inch', '2399', 'The Apple MacBook Pro 16-inch features a stunning Retina display, Apple M1 Pro chip, and 16GB RAM.', 'Computers', 'Apple', 'Space Gray', 'macbookpro16_spacegray_img1.jpg', 'macbookpro16_spacegray_img2.jpg', 'macbookpro16_spacegray_img3.jpg', '2023-04-16 07:23:45', '2023-04-16 07:23:45'),
-(4, 'Samsung Galaxy Book Pro 360', '1199', 'The Samsung Galaxy Book Pro 360 features a 15.6-inch Super AMOLED display, Intel Core i7, and 16GB RAM.', 'Computers', 'Samsung', 'Mystic Silver', 'galaxybookpro360_mysticsilver_img1.jpg', 'galaxybookpro360_mysticsilver_img2.jpg', 'galaxybookpro360_mysticsilver_img3.jpg', '2023-04-16 07:23:45', '2023-04-16 07:23:45'),
-(5, 'AirPods Pro', '249', 'The Apple AirPods Pro features Active Noise Cancellation, Transparency mode, and customizable fit.', 'Headphones', 'Apple', 'White', 'airpodspro_white_img1.jpg', 'airpodspro_white_img2.jpg', 'airpodspro_white_img3.jpg', '2023-04-16 07:23:45', '2023-04-16 07:23:45'),
-(6, 'Samsung Galaxy Buds Pro', '199', 'The Samsung Galaxy Buds Pro features Active Noise Cancellation, 3D audio, and customizable fit.', 'Headphones', 'Samsung', 'Phantom Black', 'galaxybudspro_phantomblack_img1.jpg', 'galaxybudspro_phantomblack_img2.jpg', 'galaxybudspro_phantomblack_img3.jpg', '2023-04-16 07:23:45', '2023-04-16 07:23:45');
+(52, 'Apple iPhone 14 Pro (128 GB)', '1299', 'The iPhone 14 Pro 128GB has a 6.1-inch OLED display with a Super Retina XDR display and can capture high-quality video in ProRes or Dolby Vision HDR. It also features an Action mode for stabilizing shaky shots.', 'Phone', 'Apple', 'Deep Purple', '168201181162.webp', '168201181129.webp', '168201181193.webp', '2023-04-20 14:30:11', '2023-04-20 14:34:09');
 
 -- --------------------------------------------------------
 
@@ -239,8 +255,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('DiFAqAxDmexyOW9OTXrqKwbs9nfRfwg3NFEBZ5Ud', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoid1h3TEgzNTlOd2VFeFNwZ09TeVlJQWlUc1NOaWFtU3NVcnB4c1pDQyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9yZWRpcmVjdCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1681935473),
-('W0IslSbzQEUhguUV7ln0Mx30Jryd7s1Lr4WHvYl0', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoibGxneHhuMVFYU2IxOW1taWh1Q3B0dGpJczVTbGZBYWFBRUpkeUROeiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjU6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9GQVEiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJGlJbm5CSUh0bTR0bWxkRk1hYlJvYU8vRXZnU055NWlxSnVycjhPczhjLnpTN042eEl3SVZlIjt9', 1682005721);
+('TWGdbozBvxoDlhLjyS1isRAsFzv5P96t5wulq3l1', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoibG11OGpLUGU1UU4yUFdzN0FSb0hkM09zMHFKNEZ5QlZ1TnNKUFN3eiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC90cmFja29yZGVyIjt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1682017633);
 
 -- --------------------------------------------------------
 
@@ -272,8 +287,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `usertype`, `phone`, `address`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(1, 'user', 'user@gmail.com', '0', '+371 26424242', 'Maskavas iela 250, Riga, Latvia', NULL, '$2y$10$iInnBIHtm4tmldFMabRoaO/EvgSNy5iqJurr8Os8c.zS7N6xIwIVe', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-27 04:59:49', '2023-04-20 12:27:40'),
-(2, 'admin', 'admin@gmail.com', '1', '+371 25454545', 'Brivibas iela 27, Riga, Latvia', NULL, '$2y$10$3UGIsUwWgPXAqpgXf7IC6OHvnwYY6NPIjPTr312BHX1ltfzoy5mT2', NULL, NULL, NULL, NULL, NULL, NULL, '2022-05-27 05:01:12', '2023-04-20 12:26:24');
+(1, 'user', 'user@gmail.com', '0', '+371 26424242', 'Maskavas iela 250, Riga, Latvia', NULL, '$2y$10$iInnBIHtm4tmldFMabRoaO/EvgSNy5iqJurr8Os8c.zS7N6xIwIVe', NULL, NULL, NULL, NULL, NULL, NULL, '2023-04-16 05:59:49', '2023-04-16 05:59:49'),
+(2, 'admin', 'admin@gmail.com', '1', '+371 25454545', 'Brivibas iela 27, Riga, Latvia', NULL, '$2y$10$3UGIsUwWgPXAqpgXf7IC6OHvnwYY6NPIjPTr312BHX1ltfzoy5mT2', NULL, NULL, NULL, NULL, NULL, NULL, '2023-04-16 05:32:42', '2023-04-16 05:32:42');
 
 -- --------------------------------------------------------
 
@@ -379,7 +394,7 @@ ALTER TABLE `wishlists`
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -391,13 +406,13 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -409,7 +424,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -421,7 +436,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `users`
