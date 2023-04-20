@@ -1,7 +1,10 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
   <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-    <a class="sidebar-brand brand-logo" href="{{url('redirect')}}"><img src="admin/assets/images/logo.png" alt="logo" /></a>
-    <a class="sidebar-brand brand-logo-mini" href="{{url('redirect')}}"><img src="admin/assets/images/logo-mini.png" alt="logo" /></a>
+    <a href="{{url('/')}}" class="navbar-brand brand-logo-mini">
+      <span style="font-family: Helvetica; color: white; font-size: 24px;">
+          Tech<span style="font-weight: bold;">Bay</span>
+      </span>
+    </a>
   </div>
   <ul class="nav">
     <li class="nav-item profile">

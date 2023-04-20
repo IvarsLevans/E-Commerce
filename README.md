@@ -1,7 +1,7 @@
-# Clothing Store Management Website - CRUD
+# TechBay | Electronics
 # **Introduction**
 
-This is a Laravel E-commerce Project - TechBay.
+This is a Laravel E-commerce Project - CRUD.
 
 > Technology Used : Laravel-8, Bootstrap, JavaScript, Ajax
 

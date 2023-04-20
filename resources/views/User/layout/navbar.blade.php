@@ -6,8 +6,8 @@
             <nav class="limiter-menu-desktop p-l-45">
 
                 <!-- Logo desktop -->
-                <a href="{{url('/')}}" class="logo">
-                    <img src="images/icons/logo-01.png" alt="IMG-LOGO">
+                <a href="{{url('/')}}" class="logo" style="font-family: Helvetica; color: black; font-size: 36px;">
+                    Tech<span style="font-weight: bold;">Bay</span>
                 </a>
 
                 <!-- Menu desktop -->
@@ -99,7 +99,9 @@
     <div class="wrap-header-mobile">
         <!-- Logo moblie -->
         <div class="logo-mobile">
-            <a href="{{url('/')}}"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+            <a href="{{url('/')}}" class="logo" style="font-family: Helvetica; color: black; font-size: 36px;">
+                Tech<span style="font-weight: bold;">Bay</span>
+            </a>
         </div>
 
         <!-- Icon header -->
