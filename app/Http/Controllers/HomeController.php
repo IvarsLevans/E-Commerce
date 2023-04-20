@@ -35,6 +35,10 @@ class HomeController extends Controller
 
             $countmess = message::all()->count();
 
+            $feedback = feedback::all();
+
+            $countfeedback = feedback::all()->count();
+
             $profit = 0;
 
             foreach ($order as $orders) {
@@ -43,7 +47,7 @@ class HomeController extends Controller
                 }
             }
 
-            return view('admin.home', compact('user', 'users', 'order', 'product', 'mess', 'countuser', 'countorder', 'countproduct', 'countmess', 'profit'));
+            return view('admin.home', compact('user', 'users', 'order', 'product', 'mess', 'countuser', 'countorder', 'countproduct', 'countmess', 'countfeedback', 'profit'));
         } elseif (Auth::user()->usertype == '0') {
             $data = product::latest()->paginate(6);
 

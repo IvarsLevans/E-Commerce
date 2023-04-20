@@ -241,9 +241,9 @@
                                             </div>
                                         </div>
 
-                                        <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" type="submit" name="submit">
-                                            Send
-                                        </button>
+                                        <div class="flex-c-m stext-101 cl0 size-112 bg7 bor11 hov-btn3 p-lr-15 trans-04 m-b-10 pointer">
+                                            <input type="submit" name="submit" value="Submit" style="cursor: pointer;">
+                                        </div>
                                     </form>
 
                                 </div>

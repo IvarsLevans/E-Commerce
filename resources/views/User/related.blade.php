@@ -51,7 +51,7 @@
             </div>
             @if($match==0)
             <h5 class="txt-center">
-                Doesn't have any items related with your current item!
+                Don't have any items related with your current item!
             </h5>
             @endif
         </div>
