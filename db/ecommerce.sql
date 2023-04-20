@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2023 at 09:08 PM
+-- Generation Time: Apr 20, 2023 at 10:22 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -175,7 +175,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `id_user`, `firstname`, `lastname`, `email`, `phone`, `address`, `country`, `state`, `zip`, `method`, `cc_name`, `cc_number`, `cc_expiration`, `cc_cvv`, `items`, `price`, `status`, `created_at`, `updated_at`) VALUES
-(15, '1', 'John', 'Smith', 'user@gmail.com', '+371 26424242', 'Maskavas iela 250', 'Latvia', 'Riga', 'LV-1050', 'PayPal', 'John Smith', '5733769840916243898', '10/2027', '341', 'Apple iPhone 14 Pro (128 GB) X 1', '1299', 'Pending', '2023-04-20 15:37:44', '2023-04-20 15:37:44');
+(15, '1', 'John', 'Smith', 'user@gmail.com', '+371 26424242', 'Maskavas iela 250', 'Latvia', 'Riga', 'LV-1050', 'PayPal', 'John Smith', '5733769840916243898', '10/2027', '341', 'Apple iPhone 14 Pro (128 GB) X 1', '1299', 'Approved', '2023-04-20 15:37:44', '2023-04-20 16:13:02');
 
 -- --------------------------------------------------------
 
@@ -233,7 +233,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `title`, `price`, `description`, `category`, `brand`, `color`, `image1`, `image2`, `image3`, `created_at`, `updated_at`) VALUES
-(52, 'Apple iPhone 14 Pro (128 GB)', '1299', 'The iPhone 14 Pro 128GB has a 6.1-inch OLED display with a Super Retina XDR display and can capture high-quality video in ProRes or Dolby Vision HDR. It also features an Action mode for stabilizing shaky shots.', 'Phone', 'Apple', 'Deep Purple', '168201181162.webp', '168201181129.webp', '168201181193.webp', '2023-04-20 14:30:11', '2023-04-20 14:34:09');
+(52, 'Apple iPhone 14 Pro (128 GB)', '1299', 'The iPhone 14 Pro 128GB has a 6.1-inch OLED display with a Super Retina XDR display and can capture high-quality video in ProRes or Dolby Vision HDR. It also features an Action mode for stabilizing shaky shots.', 'Phone', 'Apple', 'Deep Purple', '168201181162.webp', '168201181129.webp', '168201181193.webp', '2023-04-20 14:30:11', '2023-04-20 14:34:09'),
+(53, 'Samsung Galaxy Z Fold 4 (512GB)', '1999', 'The Samsung Galaxy Z Fold4 is lighter and more durable than its predecessor. It now boasts the fastest processor in the Samsung Galaxy Z Fold series.', 'Phone', 'Samsung', 'Gray Green', '168201834463.webp', '168201834489.webp', '168201834479.webp', '2023-04-20 16:19:04', '2023-04-20 16:19:04'),
+(54, 'Huawei Mate 50 Pro', '1099', 'The Huawei Mate 50 Pro is a new flagship phone with a F1.4 ultra-large aperture, RYYB sensor, 120 Hz OLED display, IP68 water and dust resistance, 4700 mAh battery, 66 W wired HUAWEI Super Charge, 50 W wireless HUAWEI SuperCharge and more', 'Phone', 'Huawei', 'Silver', '168201863598.jpeg', '168201863553.jpeg', '168201863571.jpeg', '2023-04-20 16:23:55', '2023-04-20 16:23:55');
 
 -- --------------------------------------------------------
 
@@ -255,7 +257,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('TWGdbozBvxoDlhLjyS1isRAsFzv5P96t5wulq3l1', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoibG11OGpLUGU1UU4yUFdzN0FSb0hkM09zMHFKNEZ5QlZ1TnNKUFN3eiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC90cmFja29yZGVyIjt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1682017633);
+('GsvZXuMzlFkhtjcrFaZWPU2VxtXPjrZryw4Lv2DG', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVGhkTzhJN2FydFRqZG01clZmOGRwNzhBY1NDNThhNlh1OGR1WVpWdyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zaG9wIjt9fQ==', 1682022128);
 
 -- --------------------------------------------------------
 
@@ -436,7 +438,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `users`

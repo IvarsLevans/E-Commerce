@@ -44,7 +44,7 @@
                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
                             <h6 class="text-muted font-weight-normal"> Total proceeds</h6>
                             <div class="d-flex d-sm-block d-md-flex align-items-center">
-                                <h2 class="mb-0">{{$profit}} $</h2>
+                                <h2 class="mb-0">$ {{$profit}}</h2>
                             </div>
                         </div>
                         <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
