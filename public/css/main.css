@@ -2007,8 +2007,21 @@ input.num-product::-webkit-inner-spin-button {
 
 /*//////////////////////////////////////////////////////////////////
 [ Block2 ]*/
+.block2 {
+  margin-bottom: 30px;
+}
+
 .block2-pic {
   position: relative;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.block2-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* This property will ensure the image is scaled down to fit the container without cropping */
 }
 
 .block2-btn {

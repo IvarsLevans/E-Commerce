@@ -157,7 +157,7 @@
                     </div>
                     <hr class="mb-4">
                     <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
-                        <input type="submit" name="submit" value="Confirm checkout">
+                        <input type="submit" name="submit" value="Confirm checkout" style="cursor: pointer;">
                     </button>
                 </form>
             </div>

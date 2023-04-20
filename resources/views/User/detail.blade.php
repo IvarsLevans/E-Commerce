@@ -99,9 +99,9 @@
                     <div class="p-t-33">
                         <form action="{{url('addcart', $data->id)}}" method="post">
                             @csrf
-                            <div class="flex-w flex-r-m p-b-10">
+                            <div class="flex-w flex-r-m p-b-10" style="display: flex; justify-content: flex-start;">
                                 <div class="size-204 flex-w flex-m respon6-next">
-                                    <div class="wrap-num-product flex-w m-r-20 m-tb-10">
+                                    <div class="wrap-num-product flex-w m-r-20 m-tb-10" style="margin-right: 10px;">
                                         <div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
                                             <i class="fs-16 zmdi zmdi-minus"></i>
                                         </div>
@@ -113,8 +113,8 @@
                                         </div>
                                     </div>
 
-                                    <button type="submit" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail" style="background-color: black;">
-                                        Add to cart
+                                    <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer js-addcart-detail" style="margin-top: 50px;">
+                                        <input type="submit" name="submit" value="Add to cart" style="cursor: pointer;">
                                     </button>
                                 </div>
                             </div>
@@ -241,9 +241,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="flex-c-m stext-101 cl0 size-112 bg7 bor11 hov-btn3 p-lr-15 trans-04 m-b-10 pointer">
-                                            <input type="submit" name="submit" value="Submit" style="cursor: pointer;">
-                                        </div>
+                                        <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
+                                            <input type="submit" name="submit" value="Send" style="cursor: pointer;">
+                                        </button>
                                     </form>
 
                                 </div>

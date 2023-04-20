@@ -96,7 +96,7 @@
                                     <input class="stext-104 cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text" name="coupon" placeholder="Coupon Code">
 
                                     <div class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
-                                        <input type="submit" name="submit" value="Apply coupon">
+                                        <input type="submit" name="submit" value="Apply coupon" style="cursor: pointer;">
                                     </div>
                                 </div>
                             </form>
@@ -105,7 +105,7 @@
                                 <input class="stext-104 cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text" name="coupon" placeholder="Coupon Code">
 
                                 <div class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
-                                    <input type="submit" name="submit" value="Apply coupon">
+                                    <input type="submit" name="submit" value="Apply coupon" style="cursor: pointer;">
                                 </div>
                             </div>
                             @endif
