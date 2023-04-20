@@ -63,13 +63,13 @@
                         </div>
 
                         <div style="padding:15px;">
-                            <label for="quatity">brand</label>
+                            <label for="quatity">Brand</label>
                             <input style="color:black;" type="text" name="brand" value="{{ $data->brand }}" require="">
                         </div>
 
                         <div style="padding:15px;">
-                            <label for="quatity">Size</label>
-                            <input style="color:black;" type="text" name="size" value="{{ $data->size }}" require="">
+                            <label for="quantity">Color</label>
+                            <input style="color:black;" type="text" name="color" value="{{ $data->color }}" required>
                         </div>
 
                         <div style="padding:15px;">

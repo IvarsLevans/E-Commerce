@@ -62,15 +62,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="category">Category</label>
-                                            <input type="text" style="color:black;" class="form-control" name="category" placeholder="Give a product category">
+                                            <input type="text" style="color:black;" class="form-control" name="category" placeholder="Phone / Computer / Headphones">
                                         </div>
                                         <div class="form-group">
                                             <label for="brand">Brand</label>
-                                            <input type="text" style="color:black;" class="form-control" name="Brand" placeholder="Apple/Samsung/Huawei">
+                                            <input type="text" style="color:black;" class="form-control" name="brand" placeholder="Apple / Samsung / Huawei">
                                         </div>
                                         <div class="form-group">
                                             <label for="size">Color</label>
-                                            <input type="text" style="color:black;" class="form-control" name="Color" placeholder="Give a product color">
+                                            <input type="text" style="color:black;" class="form-control" name="color" placeholder="Give a product color">
                                         </div>
 
                                         <div class="form-group">
