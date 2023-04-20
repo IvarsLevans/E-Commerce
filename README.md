@@ -51,7 +51,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-You can import file 'clothing_website.sql' in folder DB to use available data, or
+You can import file 'ecommerce.sql' in folder DB to use available data, or
 
 You can create new data with migrate the database:
 ```bash
