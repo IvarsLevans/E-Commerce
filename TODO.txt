@@ -1,0 +1,2 @@
+Resize detailed product images,
+Cohesive view Button styling

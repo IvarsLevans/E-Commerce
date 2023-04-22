@@ -82,8 +82,8 @@
             <div class="block2">
                 <div class="block2-pic hov-img0">
                     <img src="productimage/{{$product->image1}}" alt="IMG-PRODUCT">
-                    <a href="{{url('productdetail', $product->id)}}" class="block2-btn flex-c-m stext-103 cl0 size-102 bg1 bor2 hov-btn1 p-lr-15 trans-04">
-                        View
+                    <a href="{{url('productdetail', $product->id)}}" class="flex-c-m stext-103 cl0 size-102 bg3 bor1 hov-btn3 p-lr-15 trans-04" style="margin-top: 50px;">
+                        <span>View</span>
                     </a>
                 </div>
 

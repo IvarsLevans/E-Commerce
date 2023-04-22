@@ -113,9 +113,11 @@
                                         </div>
                                     </div>
 
-                                    <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer js-addcart-detail" style="margin-top: 50px;">
-                                        <input type="submit" name="submit" value="Add to cart" style="cursor: pointer;">
-                                    </button>
+                                    <div class="w-full">
+                                        <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer js-addcart-detail" style="margin-top: 50px;">
+                                            <span>Add to Cart</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -241,9 +243,11 @@
                                             </div>
                                         </div>
 
-                                        <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
-                                            <input type="submit" name="submit" value="Send" style="cursor: pointer;">
-                                        </button>
+                                        <div class="w-full">
+                                            <button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer js-addcart-detail" style="margin-top: 50px;">
+                                                <span>Send</span>
+                                            </button>
+                                        </div>
                                     </form>
 
                                 </div>

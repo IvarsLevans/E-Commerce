@@ -3166,17 +3166,48 @@ iframe {border: none;}
 .wrap-pic-max-w,
 .wrap-pic-h,
 .wrap-pic-max-h {
-	display: block;
+    display: block;
 }
 
-.wrap-pic-w img {width: 100%;}
-.wrap-pic-max-w img {max-width: 100%;}
+.wrap-pic-w {
+    position: relative;
+    width: 500px; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    overflow: hidden;
+}
 
-.wrap-pic-h img {height: 100%;}
-.wrap-pic-max-h img {max-height: 100%;}
+.wrap-pic-w img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* This property will ensure the image is scaled down to fit the container without cropping */
+}
 
-.wrap-pic-s img {width: 100%; height: 100%;}
-.wrap-pic-max-s img {max-width: 100%; max-height: 100%;}
+.wrap-pic-max-w img {
+    max-width: 100%;
+}
+
+.wrap-pic-h img {
+    height: 100%;
+}
+
+.wrap-pic-max-h img {
+    max-height: 100%;
+}
+
+.wrap-pic-s img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap-pic-max-s img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 
 /*---------------------------------------------*/
