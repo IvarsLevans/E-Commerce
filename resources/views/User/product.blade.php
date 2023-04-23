@@ -49,15 +49,14 @@
                 </button>
             </div>
                 <div class="flex-w flex-l-m filter-tope-group m-tb-10">
-                    <input type="checkbox" id="phoneCheckbox" class="m-r-32 m-tb-5" data-category-filter=".Phone">
-                    <label for="phoneCheckbox" class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5">Phones</label>
+                    <input type="checkbox" id="phoneCheckbox" class="m-r-32 m-tb-5 cl6 hov1 trans-04" style="margin-right: 10px;" data-category-filter=".Phone">
+                    <label for="phoneCheckbox" class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" style="margin-right: 10px;">Phones</label>
 
-                    <input type="checkbox" id="computerCheckbox" class="m-r-32 m-tb-5" data-category-filter=".Computer">
-                    <label for="computerCheckbox" class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5">Computers</label>
+                    <input type="checkbox" id="computerCheckbox" class="m-r-32 m-tb-5 cl6 hov1 trans-04" style="margin-right: 10px;" data-category-filter=".Computer">
+                    <label for="computerCheckbox" class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" style="margin-right: 10px;">Computers</label>
 
-                    <input type="checkbox" id="headphonesCheckbox" class="m-r-32 m-tb-5" data-category-filter=".Headphones">
-                    <label for="headphonesCheckbox" class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5">Headphones</label>
-
+                    <input type="checkbox" id="headphonesCheckbox" class="m-r-32 m-tb-5 cl6 hov1 trans-04" style="margin-right: 10px;" data-category-filter=".Headphones">
+                    <label for="headphonesCheckbox" class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" style="margin-right: 30px;">Headphones</label>
                 <div class="flex-w flex-c-m m-tb-10">
 
                     <div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
@@ -85,8 +84,8 @@
                 <div class="block2">
                     <div class="block2-pic hov-img0">
                         <img src="productimage/{{$product->image1}}" alt="IMG-PRODUCT">
-                        <a href="{{url('productdetail', $product->id)}}" class="flex-c-m stext-103 cl0 size-102 bg3 bor1 hov-btn3 p-lr-15 trans-04" style="margin-top: 50px;">
-                            <span>View</span>
+                        <a href="{{url('productdetail', $product->id)}}" class="block2-btn flex-c-m stext-103 cl0 size-102 bg3 bor1 hov-btn3 p-lr-15 trans-04">
+                            View
                         </a>
                     </div>
 
