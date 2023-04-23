@@ -76,8 +76,8 @@
                                 </form>
                                 <?php
                                 $totalprice = $totalprice + ($carts->price * $carts->quatity);
-                                if ($carts->coupon == "ABC") {
-                                    $coupon = 15;
+                                if ($carts->coupon == "20%OFF") {
+                                    $coupon = 20;
                                 }
                                 $discount = $totalprice * $coupon / 100;
                                 $final = $totalprice - $discount;

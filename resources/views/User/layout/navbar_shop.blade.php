@@ -6,7 +6,7 @@
         <div class="top-bar">
             <div class="content-topbar flex-sb-m h-full container">
                 <div class="left-top-bar">
-                    Free standard shipping for orders over $1000
+                    Free standard shipping for orders over $2000
                 </div>
 
                 <div class="right-top-bar flex-w h-full">

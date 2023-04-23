@@ -108,7 +108,7 @@
 
                     <div class="mb-3">
                         <label for="phone">Phone</label>
-                        <input type="text" class="form-control" name="phone" placeholder="+371 ********" required="">
+                        <input type="text" class="form-control" name="phone" placeholder="********" required="">
                         <div class="invalid-feedback">
                             Please enter your shipping address.
                         </div>

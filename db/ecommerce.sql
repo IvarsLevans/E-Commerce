@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2023 at 10:22 PM
+-- Generation Time: Apr 23, 2023 at 10:16 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -175,7 +175,8 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `id_user`, `firstname`, `lastname`, `email`, `phone`, `address`, `country`, `state`, `zip`, `method`, `cc_name`, `cc_number`, `cc_expiration`, `cc_cvv`, `items`, `price`, `status`, `created_at`, `updated_at`) VALUES
-(15, '1', 'John', 'Smith', 'user@gmail.com', '+371 26424242', 'Maskavas iela 250', 'Latvia', 'Riga', 'LV-1050', 'PayPal', 'John Smith', '5733769840916243898', '10/2027', '341', 'Apple iPhone 14 Pro (128 GB) X 1', '1299', 'Approved', '2023-04-20 15:37:44', '2023-04-20 16:13:02');
+(15, '1', 'John', 'Smith', 'user@gmail.com', '+371 26424242', 'Maskavas iela 250', 'Latvia', 'Riga', 'LV-1050', 'PayPal', 'John Smith', '5733769840916243898', '10/2027', '341', 'Apple iPhone 14 Pro (128 GB) X 1', '1299', 'Approved', '2023-04-20 15:37:44', '2023-04-20 16:13:02'),
+(16, '1', 'John', 'Smith', 'user@gmail.com', '+371 26424242', 'Maskavas iela 250', 'Latvia', 'Riga', 'LV-1050', 'Credit card', 'John Smith', '4929361650819788', '03/2024', '413', 'Huawei Mate 50 Pro X 1', '1099', 'Pending', '2023-04-22 20:41:48', '2023-04-22 20:41:48');
 
 -- --------------------------------------------------------
 
@@ -233,9 +234,14 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `title`, `price`, `description`, `category`, `brand`, `color`, `image1`, `image2`, `image3`, `created_at`, `updated_at`) VALUES
-(52, 'Apple iPhone 14 Pro (128 GB)', '1299', 'The iPhone 14 Pro 128GB has a 6.1-inch OLED display with a Super Retina XDR display and can capture high-quality video in ProRes or Dolby Vision HDR. It also features an Action mode for stabilizing shaky shots.', 'Phone', 'Apple', 'Deep Purple', '168201181162.webp', '168201181129.webp', '168201181193.webp', '2023-04-20 14:30:11', '2023-04-20 14:34:09'),
-(53, 'Samsung Galaxy Z Fold 4 (512GB)', '1999', 'The Samsung Galaxy Z Fold4 is lighter and more durable than its predecessor. It now boasts the fastest processor in the Samsung Galaxy Z Fold series.', 'Phone', 'Samsung', 'Gray Green', '168201834463.webp', '168201834489.webp', '168201834479.webp', '2023-04-20 16:19:04', '2023-04-20 16:19:04'),
-(54, 'Huawei Mate 50 Pro', '1099', 'The Huawei Mate 50 Pro is a new flagship phone with a F1.4 ultra-large aperture, RYYB sensor, 120 Hz OLED display, IP68 water and dust resistance, 4700 mAh battery, 66 W wired HUAWEI Super Charge, 50 W wireless HUAWEI SuperCharge and more', 'Phone', 'Huawei', 'Silver', '168201863598.jpeg', '168201863553.jpeg', '168201863571.jpeg', '2023-04-20 16:23:55', '2023-04-20 16:23:55');
+(52, 'Apple iPhone 14 Pro, 128 GB', '1299', 'The iPhone 14 Pro has a 6.1-inch display and comes with a triple-lens camera system with telephoto, wide, and ultra-wide lenses.', 'Phone', 'Apple', 'Deep Purple', '168201181162.webp', '168201181129.webp', '168201181193.webp', '2023-04-20 14:30:11', '2023-04-23 16:53:07'),
+(53, 'Samsung Galaxy Z Fold 4, 512GB', '1999', 'The Samsung Galaxy Z Fold4 is lighter and more durable than its predecessor. It now boasts the fastest processor in the Samsung Galaxy Z Fold series.', 'Phone', 'Samsung', 'Gray Green', '168201834463.webp', '168201834489.webp', '168201834479.webp', '2023-04-20 16:19:04', '2023-04-23 16:46:17'),
+(54, 'Huawei Mate 50 Pro', '1099', 'The Huawei Mate 50 Pro is a new flagship phone with a F1.4 ultra-large aperture, RYYB sensor, 120 Hz OLED display, IP68 water and dust resistance, 4700 mAh battery, 66 W wired HUAWEI Super Charge, 50 W wireless HUAWEI SuperCharge and more', 'Phone', 'Huawei', 'Silver', '168227988747.jpeg', '168227988716.jpeg', '168227988765.jpeg', '2023-04-20 16:23:55', '2023-04-23 16:58:07'),
+(55, 'Apple MacBook Air 13.6\" M2 8C CPU, 8C GPU, 256GB', '1329', 'The MacBook Air with M2 chip has an 8-core CPU with 4 performance cores and 4 efficiency cores, an 8-core GPU, and a 16-core Neural Engine.', 'Computer', 'Apple', 'Midnight', '168227913232.webp', '16822791323.png', '168227913296.webp', '2023-04-23 16:45:32', '2023-04-23 16:45:32'),
+(56, 'Huawei Honor Magic', '119', 'The Huawei Honor Magic5 has a 6.73-inch display and runs on Android 13 with MagicOS 7.1. It has 256GB storage but no card slot', 'Headphones', 'Huawei', 'White', '168227935492.webp', '168227935477.webp', '168227935421.webp', '2023-04-23 16:49:14', '2023-04-23 16:49:14'),
+(57, 'Apple AirPods Pro (2nd Generation)', '279', 'The Apple AirPods Pro (2nd generation) have custom high-excursion Apple drivers and a custom high dynamic range amplifier.', 'Headphones', 'Apple', 'White', '168227950226.webp', '168227950283.webp', '168227950213.webp', '2023-04-23 16:51:42', '2023-04-23 16:51:42'),
+(58, 'Apple MacBook Pro 14\" M1 Pro 10C CPU, 16C GPU, 1TB', '2579', 'The MacBook Pro with M1 Pro chip has a 10-core CPU and a 16-core GPU. It has 1TB storage.', 'Computer', 'Apple', 'Space Grey', '168228010110.webp', '168228010129.webp', '16822801013.webp', '2023-04-23 16:56:48', '2023-04-23 17:02:01'),
+(59, 'Samsung Galaxy S21 FE 5G, 128GB', '519', 'The Samsung Galaxy S21 FE 5G is a smartphone with a 6.4-inch display, 6GB of RAM, 128GB of internal storage', 'Phone', 'Samsung', 'Gray', '168228032547.webp', '168228032552.jpeg', '16822803251.webp', '2023-04-23 17:05:25', '2023-04-23 17:05:25');
 
 -- --------------------------------------------------------
 
@@ -257,7 +263,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('GsvZXuMzlFkhtjcrFaZWPU2VxtXPjrZryw4Lv2DG', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVGhkTzhJN2FydFRqZG01clZmOGRwNzhBY1NDNThhNlh1OGR1WVpWdyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zaG9wIjt9fQ==', 1682022128);
+('UZ0vKkgKbRCt3zX0llp1rTig8XSvjP4mFSFSZjZz', 8, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoidEdwa1dEMjUyU0FCOEFiQUZ4YXBOT3hicE51d3l2QVUzWXV0NEd6VSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9yZWRpcmVjdCI7fXM6NToibG9naW4iO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjg7fQ==', 1682280965);
 
 -- --------------------------------------------------------
 
@@ -289,8 +295,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `usertype`, `phone`, `address`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(1, 'user', 'user@gmail.com', '0', '+371 26424242', 'Maskavas iela 250, Riga, Latvia', NULL, '$2y$10$iInnBIHtm4tmldFMabRoaO/EvgSNy5iqJurr8Os8c.zS7N6xIwIVe', NULL, NULL, NULL, NULL, NULL, NULL, '2023-04-16 05:59:49', '2023-04-16 05:59:49'),
-(2, 'admin', 'admin@gmail.com', '1', '+371 25454545', 'Brivibas iela 27, Riga, Latvia', NULL, '$2y$10$3UGIsUwWgPXAqpgXf7IC6OHvnwYY6NPIjPTr312BHX1ltfzoy5mT2', NULL, NULL, NULL, NULL, NULL, NULL, '2023-04-16 05:32:42', '2023-04-16 05:32:42');
+(1, 'user', 'user@gmail.com', '0', '26424242', 'Maskavas iela 250, Riga, Latvia', NULL, '$2y$10$iInnBIHtm4tmldFMabRoaO/EvgSNy5iqJurr8Os8c.zS7N6xIwIVe', NULL, NULL, NULL, NULL, NULL, NULL, '2023-04-16 05:59:49', '2023-04-16 05:59:49'),
+(2, 'admin', 'admin@gmail.com', '1', '25454545', 'Brivibas iela 27, Riga, Latvia', NULL, '$2y$10$3UGIsUwWgPXAqpgXf7IC6OHvnwYY6NPIjPTr312BHX1ltfzoy5mT2', NULL, NULL, NULL, NULL, NULL, NULL, '2023-04-16 05:32:42', '2023-04-16 05:32:42'),
+(8, 'user2', 'user2@gmail.com', '0', '27454545', 'Elizabetes iela 20', NULL, '$2y$10$1O9UeNSxnJ/InoKcVQ7TNeacIotG9WtPRJT9EFNyrvNDM/scbeb.S', 'eyJpdiI6InNUYVppcnNIbmJsY1N2WlJpd0ptN3c9PSIsInZhbHVlIjoiYWxZRW5jYmduNUNIV3kvcVJ1cXZ5T3RIN0x5RFpaYStxR2dxNjV2SHdBST0iLCJtYWMiOiI5YzUyZGM3ZDExOThjOGUyYTg0NWU2OWU0YzQ3YmNkNzcwNWNmYzc5MGEyZmIxNWMyYTFmOTkwZDQ0Mzg4MGYwIiwidGFnIjoiIn0=', 'eyJpdiI6ImtQblpVMmtScXYrRi9lU2owTEVtcVE9PSIsInZhbHVlIjoiRFlCR3lmWmFiUm5EWnRGR3gyOEJBRUtYK3JQQlhGVW1QS3EzR1NPTXZ3bjBzUHBpYUNzUFByVG9yaFZBMGhpQzZ2YXBjeXMvOE1YenRpOHB6cHQ3ZkozeEZjU040WHM3Qk84Z3Y1b2tveEsyZTEyQ2F0d2E4dmNqb1E2NVFGdS9qRXFqVTZJR0FNREp6ZFpTVjlUZVFURTFtdTdsd0x3cHo3N1d4bkdHNHhMMkNXMGdUZXpvclVRTEN5dzFLMmRqbDcyVlFHZVpNZDRXSlE5cnVvaUN4eWI3ZXdOSS90U1RYMTNyWndYejcwb0tNRFhjaUNJWlVNbng4YTVLcFNod2NsZHgrYS9pY0RSZlQrcy90dzhHZlE9PSIsIm1hYyI6IjVlMTNmMDI0ZmVjMThiZDY3OTAwMTMwZDQwMWUzMWJiNGNkNzEwMDc1YzA3Zjk4Njk1NTE1ODdjZjY0MzA3MTUiLCJ0YWciOiIifQ==', '2023-04-23 17:10:53', NULL, NULL, NULL, '2023-04-23 17:07:11', '2023-04-23 17:10:53');
 
 -- --------------------------------------------------------
 
@@ -396,7 +403,7 @@ ALTER TABLE `wishlists`
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -408,7 +415,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `messages`
@@ -426,7 +433,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -438,19 +445,19 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `wishlists`
 --
 ALTER TABLE `wishlists`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

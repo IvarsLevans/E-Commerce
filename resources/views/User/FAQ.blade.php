@@ -171,7 +171,7 @@
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            At TechBay, we offer free shipping for all orders over $1000. For orders below $1000, we charge a $7.95 shipping fee for Standard Post. Please note that delivery delays may occur in some areas and your parcel may take up to an extra 7 business days from the estimated delivery date to arrive. If you have received your tracking number, rest assured that your order has been shipped by us and is currently on its way to you with the courier.
+                                            At TechBay, we offer free shipping for all orders over $2000. For orders below $2000, we charge a $7.95 shipping fee for Standard Post. Please note that delivery delays may occur in some areas and your parcel may take up to an extra 7 business days from the estimated delivery date to arrive. If you have received your tracking number, rest assured that your order has been shipped by us and is currently on its way to you with the courier.
                                         </div>
                                     </div>
                                 </div>
