@@ -6,7 +6,7 @@
                     <h5>Products</h5>
                     <div class="row">
                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                            <h6 class="text-muted font-weight-normal"> Currently items</h6>
+                            <h6 class="text-muted font-weight-normal"> Current items</h6>
                             <div class="d-flex d-sm-block d-md-flex align-items-center">
                                 <h2 class="mb-0">{{$countproduct}} items</h2>
                             </div>
