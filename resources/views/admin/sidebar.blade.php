@@ -66,10 +66,10 @@
       </a>
       <div class="collapse" id="auth">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="{{url('showuser')}}">Show User</a></li>
-          <li class="nav-item"> <a class="nav-link" href="{{url('showproduct')}}">Show Product</a></li>
-          <li class="nav-item"> <a class="nav-link" href="{{url('showorder')}}">Show Order</a></li>
-          <li class="nav-item"> <a class="nav-link" href="{{url('showmessage')}}">Show Message</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{url('showuser')}}">Show Users</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{url('showproduct')}}">Show Products</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{url('showorder')}}">Show Orders</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{url('showmessage')}}">Show Messages</a></li>
           <li class="nav-item"> <a class="nav-link" href="{{url('showreview')}}">Show Feedback</a></li>
         </ul>
       </div>

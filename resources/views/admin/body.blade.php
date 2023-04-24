@@ -93,7 +93,7 @@
         <div class="col-sm-4 grid-margin">
             <div class="card">
                 <div class="card-body">
-                    <h5>Feedbacks</h5>
+                    <h5>Feedback</h5>
                     <div class="row">
                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
                             <h6 class="text-muted font-weight-normal"> Total reviews</h6>
